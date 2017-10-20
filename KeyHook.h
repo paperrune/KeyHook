@@ -9,7 +9,7 @@ public:
 		return shared_from_this();
 	}
 protected:
-	virtual void onKey(const KBDLLHOOKSTRUCT *) = 0;
+	virtual bool onKey(const KBDLLHOOKSTRUCT *) = 0;
 };
 
 class KeyHook{
