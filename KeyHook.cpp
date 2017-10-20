@@ -19,7 +19,7 @@ void KeyHook::Disable(){
 }
 
 LRESULT WINAPI KeyHook::keyProc(int nCode, WPARAM wParam, LPARAM lParam){
-	delegate->onKey((KBDLLHOOKSTRUCT *)lParam);
+	if (delegate->onKey((KBDLLHOOKSTRUCT *)lParam)) return true;
 
 	return CallNextHookEx(hook, nCode, wParam, lParam);
 }
