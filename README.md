@@ -1,2 +1,2 @@
-keyhook
+WinAPI keyboard hook class
 =======
