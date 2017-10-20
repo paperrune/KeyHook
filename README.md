@@ -1,2 +1,2 @@
 # WinAPI-KeyHook
-WinAPI class hooking keyboard input
+WinAPI class hooking keyboard
